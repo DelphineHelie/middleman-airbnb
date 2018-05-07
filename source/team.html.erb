@@ -1,0 +1,24 @@
+<div id="about">
+  <div class="about-content">
+
+    <h1>This template is built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline text-center">
+      <% ["jucando", "delphinehelie"].each do |gh_username| %>
+        <% data.users.each do |user| %>
+          <% if user.github_nickname == gh_username %>
+          <% @gh_name = user.name %>
+        <% end %>
+      <% end %>
+        <li>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+          <h3><%= @gh_name.split.map(&:capitalize)*' ' %></h3>
+          <p>
+            <a href="http://github.com/gh_username">              <i class="fa fa-github"></i> <%= gh_username %> </a>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  </div>
+
+<h1>This template is built with <i class="fa fa-heart"></i> by</h1>
