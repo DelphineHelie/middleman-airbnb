@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  background:  white;
+
+}
+
+.flat-header {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+
+.owner-card {
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.flat-card {
+  h1 {
+  font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.form {
+  flex: 0 0 auto;
+
+}
+
+.flat {
+  flex: 0 0 auto;
+}
+
+.form-header {
+  flex: 0 0 auto;
+}
